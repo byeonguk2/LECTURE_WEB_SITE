@@ -1,6 +1,10 @@
 $(function () {
+  const headerPath = window.location.pathname.includes("/html/")
+    ? "../include/header.html"
+    : "include/header.html";
+
   /* Include Files */
-  $(".header-include").load("../include/header.html", function () {
+  $(".header-include").load(headerPath, function () {
     /* Mega Navigation : Mobile & PC Width Check */
     $(window)
       .resize(function () {
@@ -65,7 +69,11 @@ $(function () {
     });
   });
 
-  $(".footer-include").load("../include/footer.html", function () {
+  const footerPath = window.location.pathname.includes("/html/")
+    ? "../include/footer.html"
+    : "include/footer.html";
+
+  $(".footer-include").load(footerPath, function () {
     /* Footer LNB */
     $(".link-item-title").click(function () {
       $(this).next().stop().slideToggle(200);
