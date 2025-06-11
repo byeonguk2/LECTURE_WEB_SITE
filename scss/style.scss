@@ -41,7 +41,7 @@ body.active {
 section:not(.front-slider) {
   padding: 65px 0;
 }
-[class*=inner] {
+[class*="inner"] {
   width: 1160px;
   margin: auto;
 }
@@ -84,13 +84,14 @@ header {
       padding: 20px 0;
       align-items: center;
       .logo {
-        img {}
+        img {
+        }
       }
       @at-root .search,
-      .search-mobile {
+        .search-mobile {
         width: 520px;
         position: relative;
-        input[type=text] {
+        input[type="text"] {
           width: 100%;
           background-color: $silver-gray;
           padding: 7px;
@@ -106,7 +107,8 @@ header {
             box-shadow: 0 0 5px rgba($royalblue, 0.5);
           }
           &:focus + img {
-            filter: invert(41%) sepia(67%) saturate(4360%) hue-rotate(196deg) brightness(85%) contrast(114%);
+            filter: invert(41%) sepia(67%) saturate(4360%) hue-rotate(196deg)
+              brightness(85%) contrast(114%);
           }
         }
         img {
@@ -176,10 +178,10 @@ header {
       align-items: center;
       gap: 10px;
       a {
-        font-weight: 400; 
+        font-weight: 400;
         color: $dim-black;
         &:after {
-          content: '·';
+          content: "·";
           padding-left: 7px;
         }
         &:last-child:after {
@@ -191,8 +193,8 @@ header {
       }
       .trigger {
         &:before {
-          content: '';
-          background: url('/images/icon-category.png');
+          content: "";
+          background: url("../images/icon-category.png");
           width: 20px;
           height: 18px;
           display: inline-block;
@@ -357,7 +359,7 @@ header {
         /* Custom CSS : Slick - 다음 이전 아이콘 */
         .slick-next:before,
         .slick-prev:before {
-          content: '\F285';
+          content: "\F285";
           font-family: $bs-font;
           color: $light-black;
           display: inline-block;
@@ -384,12 +386,12 @@ header {
               font-style: normal;
               cursor: pointer;
               &:before {
-                content: '\F417';
+                content: "\F417";
                 font-family: $bs-font;
                 color: $white;
               }
               &.active:before {
-                content: '\F415';
+                content: "\F415";
                 color: $crimson;
               }
             }
@@ -440,7 +442,7 @@ header {
               .rating {
                 margin-left: 5px;
                 &:after {
-                  content: '|';
+                  content: "|";
                   color: $dark-gray;
                   font-size: 10px;
                   margin-left: 5px;
@@ -830,7 +832,7 @@ footer {
       margin-bottom: 30px;
       select {
         appearance: none;
-        background: url('/images/icon-select.svg') no-repeat center right 10px;
+        background: url("../images/icon-select.svg") no-repeat center right 10px;
         background-size: 12px;
       }
       button {
@@ -899,7 +901,7 @@ footer {
       div {
         position: relative;
         margin: 15px 0;
-        :is(input[type=email], input[type=password], input[type=text]) {
+        :is(input[type="email"], input[type="password"], input[type="text"]) {
           border: 1px solid $dim-gray;
           width: 100%;
           padding: 13px;
@@ -938,14 +940,14 @@ footer {
       padding-bottom: 20px;
       label {
         cursor: pointer;
-        input[type=checkbox] {
+        input[type="checkbox"] {
           display: none;
           &:checked + em:before {
-            content: '\F26D';
+            content: "\F26D";
           }
         }
         em:before {
-          content: '\F584';
+          content: "\F584";
           font-family: $bs-font;
           font-style: normal;
           display: inline-block;
@@ -1148,7 +1150,8 @@ footer {
           }
         }
         .origin-price {
-          span {}
+          span {
+          }
         }
         .discount-amount {
           span {
@@ -1164,7 +1167,7 @@ footer {
           display: flex;
           gap: 5px;
         }
-        input[type=tel] {
+        input[type="tel"] {
           border: 1px solid $silver-gray;
           border-radius: 3px;
           padding: 5px;
@@ -1188,12 +1191,12 @@ footer {
             font-size: 12px;
             font-weight: 400;
             color: $orangered;
-            margin-left: 3px; 
+            margin-left: 3px;
           }
           margin-bottom: 5px;
           label {
             cursor: pointer;
-            input[type=radio] {
+            input[type="radio"] {
               display: none;
               + em {
                 display: inline-block;
@@ -1201,7 +1204,7 @@ footer {
                 height: 20px;
                 margin-right: 3px;
                 transform: translateY(3px);
-                background: url('/images/icon-custom-radio.png') no-repeat;
+                background: url("../images/icon-custom-radio.png") no-repeat;
                 background-position: left;
               }
               &:checked + em {
@@ -1232,7 +1235,8 @@ footer {
 /* ############ Class Detail : class-detail.html ############ */
 .class-detail-image {
   padding: 0 !important;
-  background: url('/images/ct-class-detail-main-01.png') no-repeat center center;
+  background: url("../images/ct-class-detail-main-01.png") no-repeat center
+    center;
   background-size: cover;
   .class-detail-image-inner {
     height: 600px;
@@ -1284,7 +1288,7 @@ footer {
             &.active {
               font-weight: 500;
               &:after {
-                content: '';
+                content: "";
                 width: 100%;
                 height: 3px;
                 background-color: $black;
@@ -1301,7 +1305,7 @@ footer {
           position: relative;
           padding-left: 10px;
           &:before {
-            content: '';
+            content: "";
             width: 4px;
             height: 43px;
             background-color: $crimson;
@@ -1334,7 +1338,8 @@ footer {
               border: 1px solid $silver-gray;
               border-radius: 10px;
               padding: 30px;
-              img {}
+              img {
+              }
               h2 {
                 font-size: 20px;
                 color: $royalblue;
@@ -1398,13 +1403,13 @@ footer {
                   justify-content: space-between;
                   border-bottom: 1px solid $silver-gray;
                   &.active .chapter-subject:before {
-                    content: '\F64D';
+                    content: "\F64D";
                   }
                   .chapter-subject {
                     color: $turquoise;
                     font-weight: 500;
                     &:before {
-                      content: '\F63B';
+                      content: "\F63B";
                       font-family: $bs-font;
                       margin-right: 5px;
                       font-weight: bold;
@@ -1412,7 +1417,8 @@ footer {
                       transform: translateY(2px);
                     }
                   }
-                  .chapter-hour {}
+                  .chapter-hour {
+                  }
                 }
                 .chapter-content {
                   .chapter-content-class {
@@ -1434,7 +1440,8 @@ footer {
                         padding: 2px;
                         font-weight: normal;
                       }
-                      .class-hour-detail {}
+                      .class-hour-detail {
+                      }
                     }
                   }
                 }
@@ -1538,7 +1545,7 @@ footer {
               margin-top: 40px;
               .review-user-comment {
                 display: flex;
-                gap: 10px ;
+                gap: 10px;
                 margin: 5px 0;
                 .user-avatar {
                   img {
@@ -1805,7 +1812,7 @@ footer {
               list-style: none;
               line-height: 1.3em;
               li:before {
-                content: '·';
+                content: "·";
                 font-size: 20px;
                 margin-right: 5px;
                 transform: translateY(3px);
@@ -1825,7 +1832,7 @@ footer {
           font-size: 16px;
           margin-top: 20px;
           &:before {
-            content: '\F64D';
+            content: "\F64D";
             font-family: $bs-font;
             margin-right: 5px;
             transform: translateY(2px);
@@ -1847,11 +1854,11 @@ footer {
               transform: translateY(2px);
             }
             &:before {
-              content: '\F24A';
+              content: "\F24A";
               margin-right: 5px;
             }
             &:after {
-              content: '\F285';
+              content: "\F285";
               margin-left: 5px;
             }
           }
@@ -1899,17 +1906,17 @@ footer {
         text-align: center;
         cursor: pointer;
         &:nth-child(1) .bi {
-          background-color: #3B5998;
+          background-color: #3b5998;
         }
         &:nth-child(2) .bi {
-          background-color: #55ACEE;
+          background-color: #55acee;
         }
         &:nth-child(3) .bi {
-          background-color: #FFE812;
+          background-color: #ffe812;
           color: $dark-black;
         }
         &:nth-child(4) .bi {
-          background-color: #E8E8E8;
+          background-color: #e8e8e8;
           color: $dark-black;
           font-size: 2em;
         }
@@ -1941,7 +1948,7 @@ footer {
             transform: translateX(-50%);
             display: none;
             &:after {
-              content: '';
+              content: "";
               width: 5px;
               height: 5px;
               background-color: $black;
@@ -1999,19 +2006,19 @@ footer {
         background-size: 20px;
         color: $white;
         &.kakao {
-          background-image: url('/images/icon-kakao.svg');
-          background-color: #FFD912;
+          background-image: url("../images/icon-kakao.svg");
+          background-color: #ffd912;
         }
         &.facebook {
-          background-image: url('/images/icon-facebook.svg');
-          background-color: #006BE5;
+          background-image: url("../images/icon-facebook.svg");
+          background-color: #006be5;
         }
         &.apple {
-          background-image: url('/images/icon-apple.svg');
+          background-image: url("../images/icon-apple.svg");
           background-color: #333;
         }
         &.email {
-          background-image: url('/images/icon-email.svg');
+          background-image: url("../images/icon-email.svg");
           background-color: #fff;
           border: 1px solid $dim-gray;
           color: $dark-black;
@@ -2026,7 +2033,7 @@ footer {
       position: relative;
       &:before,
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         height: 1px;
         width: 43%;
@@ -2119,13 +2126,13 @@ footer {
       width: 100%;
     }
     &:nth-of-type(1):after {
-      content: 'hrs';
+      content: "hrs";
     }
     &:nth-of-type(2):after {
-      content: 'min';
+      content: "min";
     }
     &:nth-of-type(3):after {
-      content: 'sec';
+      content: "sec";
     }
   }
 }
@@ -2151,7 +2158,7 @@ footer {
     color: $light-black;
   }
   &:after {
-    content: 'top';
+    content: "top";
     text-transform: uppercase;
     color: $light-black;
     font-size: 10px;
@@ -2161,7 +2168,7 @@ footer {
 }
 
 @media (max-width: 1160px) {
-  [class*=inner] {
+  [class*="inner"] {
     width: 100% !important;
   }
 }

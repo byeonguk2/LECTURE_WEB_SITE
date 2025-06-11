@@ -3,12 +3,11 @@
 
 /* Responsive for Mobile */
 @media (max-width: 767px) {
-
   /* ############ Common CSS ############ */
   section:not(.front-slider) {
     padding: 35px 10px;
   }
-  [class*=inner] {
+  [class*="inner"] {
     width: 100% !important;
   }
   .front-header {
@@ -45,7 +44,7 @@
             display: none;
           }
           &:before {
-            background: url('/images/icon-category-search.png');
+            background: url("../images/icon-category-search.png");
           }
         }
         .special-navi {
@@ -86,7 +85,7 @@
             padding: 5px 15px;
             color: $dark-gray;
             &:after {
-              content: '\f4fe';
+              content: "\f4fe";
               font-family: $bs-font;
               float: right;
               color: $silver-black;
@@ -96,7 +95,7 @@
               color: $white;
             }
             &.active:after {
-              content: '\f2ea';
+              content: "\f2ea";
               color: $white;
             }
           }
@@ -143,7 +142,7 @@
               border-bottom: 1px solid $silver-black;
               pointer-events: all;
               &:after {
-                content: '\f282';
+                content: "\f282";
                 font-family: $bs-font;
                 float: right;
                 margin-right: 5px;
@@ -575,7 +574,6 @@
       width: 90%;
     }
   }
-
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
@@ -583,4 +581,3 @@
     width: 560px;
   }
 }
-
